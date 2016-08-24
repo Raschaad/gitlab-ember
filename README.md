@@ -1,5 +1,6 @@
 [![build status](https://gitlab.com/medokin/gitlab-ember/badges/master/build.svg)](https://gitlab.com/medokin/gitlab-ember/commits/master) 
 [![coverage report](https://gitlab.com/medokin/gitlab-ember/badges/master/coverage.svg)](https://gitlab.com/medokin/gitlab-ember/commits/master)
+[![Code Climate](https://codeclimate.com/github/medokin/gitlab-ember/badges/gpa.svg)](https://codeclimate.com/github/medokin/gitlab-ember)
 
 # Gitlab
 
