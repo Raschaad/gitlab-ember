@@ -11,7 +11,7 @@ stages:
 tests:
   stage: test
   variables:
-    COVERAGE: true
+    COVERAGE: "true"
   script:
     - ember test
   tags:
