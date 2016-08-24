@@ -1,12 +1,16 @@
+image: medokin/ember-cli-test:latest
+
+before_script:
+  - npm install
+  - bower install --allow-root
+
+
 stages:
   - test
 
-staging-deployment:
-  stage: deploy
-  image: medokin/ember-cli-test:latest
+tests:
+  stage: test
   script:
-    - npm install
-    - bower install --allow-root
     - ember test
   tags:
     - docker
