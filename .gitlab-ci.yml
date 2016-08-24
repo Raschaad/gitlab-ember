@@ -1,12 +1,23 @@
 image: medokin/ember-cli-test:latest
 
-before_script:
-  - npm install
-  - bower install --allow-root
-
+cache:
+  untracked: true
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - node_modules/
+    - bower_components/
 
 stages:
+  - setup
   - test
+
+setup:
+  stage: setup
+  script:
+    - npm install
+    - bower install --allow-root
+  tags:
+    - docker
 
 tests:
   stage: test
