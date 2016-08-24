@@ -1,4 +1,4 @@
-image: danlynn/ember-cli:latest
+image: medokin/ember-cli-test:latest
 
 before_script:
   - npm install
