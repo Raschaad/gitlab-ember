@@ -10,9 +10,7 @@ stages:
 
 tests:
   stage: test
-  variables:
-    COVERAGE: "true"
   script:
-    - ember test
+    - COVERAGE=true ember test
   tags:
     - docker
