@@ -20,8 +20,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone git@gitlab.com:medokin/gitlab-ember.git`
+* `cd gitlab-ember`
 * `npm install`
 * `bower install`
 
