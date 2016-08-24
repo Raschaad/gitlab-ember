@@ -1,3 +1,5 @@
+[![build status](https://gitlab.com/medokin/gitlab-ember/badges/master/build.svg)](https://gitlab.com/medokin/gitlab-ember/commits/master)
+
 # Gitlab
 
 This README outlines the details of collaborating on this Ember application.
