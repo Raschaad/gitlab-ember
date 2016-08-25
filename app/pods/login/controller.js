@@ -15,7 +15,7 @@ actions: {
   },
   authenticateToken(){
     let token = this.get('token');
-    this.get('session').authenticate('authenticator:gitlab-oauth2-password', identification, password).catch((reason) => {
+    this.get('session').authenticate('authenticator:gitlab-api-key', token).catch((reason) => {
       this.set('errorMessage', reason.error || reason);
     });
   }

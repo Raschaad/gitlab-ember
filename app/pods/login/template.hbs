@@ -48,7 +48,7 @@
                 <h3>Use Token</h3>
               </div>
               <div class="login-body">
-                <form class="new_new_user" id="new_new_user" action="/users" accept-charset="UTF-8" method="post">
+                <form {{action 'authenticateToken' on='submit'}}>
 
                   <div class="form-group append-bottom-20">
                     {{input value=token class="form-control" placeholder="Token" type="text"}}
