@@ -1,0 +1,665 @@
+<div class="content-wrapper">
+
+
+<div class="flash-container flash-container-page">
+</div>
+
+
+
+<div class="container-fluid container-limited ">
+<div class="content">
+<div class="top-area">
+<ul class="nav-links">
+<li class=""><a title="Home" class="shortcuts-activity" data-placement="right" href="/dashboard/projects">Your Projects
+</a></li><li class=""><a title="Starred Projects" data-placement="right" href="/dashboard/projects/starred">Starred Projects
+</a></li><li class="active"><a title="Explore" data-placement="right" href="/explore">Explore Projects
+</a></li></ul>
+<div class="nav-controls">
+<form class="project-filter-form" id="project-filter-form" action="/explore" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="filter_projects" id="project-filter-form-field" placeholder="Filter by name..." class="project-filter-form-field form-control input-short projects-list-filter" spellcheck="false" tabindex="2" value="">
+</form><div class="dropdown inline">
+<button class="dropdown-menu-toggle " id="sort-projects-dropdown" type="button" data-toggle="dropdown"><span class="dropdown-toggle-text">Last updated</span><i class="fa fa-chevron-down"></i></button>
+<ul class="dropdown-menu dropdown-menu-align-right dropdown-menu-selectable">
+<li class="dropdown-header">
+Sort by
+</li>
+<li>
+<a href="/explore?archived=&amp;group=&amp;namespace_id=&amp;personal=&amp;scope=&amp;sort=name_asc&amp;tag=&amp;visibility_level=">Name
+</a></li>
+<li>
+<a class="is-active" href="/explore?archived=&amp;group=&amp;namespace_id=&amp;personal=&amp;scope=&amp;sort=updated_desc&amp;tag=&amp;visibility_level=">Last updated
+</a></li>
+<li>
+<a href="/explore?archived=&amp;group=&amp;namespace_id=&amp;personal=&amp;scope=&amp;sort=updated_asc&amp;tag=&amp;visibility_level=">Oldest updated
+</a></li>
+<li>
+<a href="/explore?archived=&amp;group=&amp;namespace_id=&amp;personal=&amp;scope=&amp;sort=created_desc&amp;tag=&amp;visibility_level=">Last created
+</a></li>
+<li>
+<a href="/explore?archived=&amp;group=&amp;namespace_id=&amp;personal=&amp;scope=&amp;sort=created_asc&amp;tag=&amp;visibility_level=">Oldest created
+</a></li>
+<li class="divider"></li>
+<li>
+<a class="is-active" href="/explore?archived=&amp;group=&amp;namespace_id=&amp;scope=&amp;sort=updated_desc&amp;tag=&amp;visibility_level=">Hide archived projects
+</a></li>
+<li>
+<a href="/explore?archived=true&amp;group=&amp;namespace_id=&amp;scope=&amp;sort=updated_desc&amp;tag=&amp;visibility_level=">Show archived projects
+</a></li>
+<li class="divider"></li>
+<li>
+<a class="is-active" href="/explore?group=&amp;namespace_id=&amp;personal=&amp;scope=&amp;sort=updated_desc&amp;tag=&amp;visibility_level=">Owned by anyone
+</a></li>
+<li>
+<a href="/explore?group=&amp;namespace_id=&amp;personal=true&amp;scope=&amp;sort=updated_desc&amp;tag=&amp;visibility_level=">Owned by me
+</a></li>
+</ul>
+</div>
+
+<a class="btn btn-new" href="/projects/new">New Project
+</a></div>
+</div>
+
+<ul class="nav-links">
+<li class="active"><a href="/explore/projects/trending">Trending
+</a></li><li class=""><a href="/explore/projects/starred">Most stars
+</a></li><li class=""><a href="/explore/projects">All
+</a></li></ul>
+
+<div class="projects-list-holder">
+<ul class="projects-list content-list">
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_cts"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E3F2FD; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_cts
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="project-row">
+<div class="controls">
+<span>
+<a class="ci-status-link ci-status-icon-success " title="Commit: passed" data-toggle="tooltip" data-placement="auto left" href="/gitlab-org/gitlab-ce/commit/7bbb523b23638c52b3c0ba43d8f3dbef8840aad6/builds"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g fill="#31AF64" fill-rule="evenodd">
+    <path d="M12.5,7 C12.5,3.96243388 10.0375661,1.5 7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 C1.5,10.0375661 3.96243388,12.5 7,12.5 C10.0375661,12.5 12.5,10.0375661 12.5,7 Z M0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 C3.13400675,14 0,10.8659932 0,7 Z"></path>
+    <path d="M7.29166667,7.875 L5.54840803,7.875 C5.38293028,7.875 5.25,8.00712771 5.25,8.17011551 L5.25,9.03821782 C5.25,9.19875081 5.38360183,9.33333333 5.54840803,9.33333333 L8.24853534,9.33333333 C8.52035522,9.33333333 8.75,9.11228506 8.75,8.83960819 L8.75,8.46475969 L8.75,4.07392947 C8.75,3.92144267 8.61787229,3.79166667 8.45488449,3.79166667 L7.58678218,3.79166667 C7.42624919,3.79166667 7.29166667,3.91804003 7.29166667,4.07392947 L7.29166667,7.875 Z" transform="rotate(45 7 6.563)"></path>
+  </g>
+</svg>
+</a>
+</span>
+<span>
+<i class="fa fa-star"></i>
+2119
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/gitlab-org/gitlab-ce"><div class="dash-project-avatar">
+<img alt="" class="avatar project-avatar s40" src="https://gitlab.com/uploads/project/avatar/13083/gitlab-logo-square.png">
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+GitLab.org
+/
+</span>
+<span class="project-name filter-title">
+GitLab Community Edition
+</span>
+</span>
+</a></div>
+<div class="description">
+<p>Version Control on your Server. See <a href="https://gitlab.com/gitlab-org/gitlab-ce">https://gitlab.com/gitlab-org/gitlab-ce</a> and the README for more information</p>
+</div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_frameworks_av"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E8EAF6; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_frameworks_av
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_system_core"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E3F2FD; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_system_core
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_frameworks_support"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E8EAF6; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_frameworks_support
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_build"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #FBE9E7; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_build
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_tools_adt_idea"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #FBE9E7; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_tools_adt_idea
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_packages_apps_settings"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #FFEBEE; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_packages_apps_Settings
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/device_htc_flounder-kernel"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E3F2FD; color: #555">D</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+device_htc_flounder-kernel
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_tools_base"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #EEEEEE; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_tools_base
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_external_autotest"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #EEEEEE; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_external_autotest
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_external_llvm"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E0F2F1; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_external_llvm
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_system_bt"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E8EAF6; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_system_bt
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_libcore"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E8EAF6; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_libcore
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="project-row">
+<div class="controls">
+<span>
+<a class="ci-status-link ci-status-icon-success " title="Commit: passed" data-toggle="tooltip" data-placement="auto left" href="/gitlab-com/www-gitlab-com/commit/a7f04867662cb08c3f9ccadd52ee759934937cae/builds"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g fill="#31AF64" fill-rule="evenodd">
+    <path d="M12.5,7 C12.5,3.96243388 10.0375661,1.5 7,1.5 C3.96243388,1.5 1.5,3.96243388 1.5,7 C1.5,10.0375661 3.96243388,12.5 7,12.5 C10.0375661,12.5 12.5,10.0375661 12.5,7 Z M0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 C3.13400675,14 0,10.8659932 0,7 Z"></path>
+    <path d="M7.29166667,7.875 L5.54840803,7.875 C5.38293028,7.875 5.25,8.00712771 5.25,8.17011551 L5.25,9.03821782 C5.25,9.19875081 5.38360183,9.33333333 5.54840803,9.33333333 L8.24853534,9.33333333 C8.52035522,9.33333333 8.75,9.11228506 8.75,8.83960819 L8.75,8.46475969 L8.75,4.07392947 C8.75,3.92144267 8.61787229,3.79166667 8.45488449,3.79166667 L7.58678218,3.79166667 C7.42624919,3.79166667 7.29166667,3.91804003 7.29166667,4.07392947 L7.29166667,7.875 Z" transform="rotate(45 7 6.563)"></path>
+  </g>
+</svg>
+</a>
+</span>
+<span>
+<i class="fa fa-star"></i>
+127
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/gitlab-com/www-gitlab-com"><div class="dash-project-avatar">
+<img alt="" class="avatar project-avatar s40" src="https://gitlab.com/uploads/project/avatar/7764/about_logo.png">
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+GitLab.com
+/
+</span>
+<span class="project-name filter-title">
+www-gitlab-com
+</span>
+</span>
+</a></div>
+<div class="description">
+<p>Source for <a href="https://about.gitlab.com/" rel="nofollow noreferrer" target="_blank">https://about.gitlab.com/</a></p>
+</div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/androidopensourceproject/platform-art"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #EEEEEE; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+androidopensourceproject
+/
+</span>
+<span class="project-name filter-title">
+platform-art
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/EuclideanROM/android_build"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #FFEBEE; color: #555">A</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+EuclideanROM
+/
+</span>
+<span class="project-name filter-title">
+android_build
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+26
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/kanban_demo/test_project"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #EEEEEE; color: #555">T</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+kanban_demo
+/
+</span>
+<span class="project-name filter-title">
+test_project
+</span>
+</span>
+</a></div>
+<div class="description">
+<p>Gitlab Kanban board on your Server  "playground project". See <a href="http://kanban.leanlabs.io" rel="nofollow noreferrer" target="_blank">http://kanban.leanlabs.io</a></p>
+</div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+0
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/android_source/platform_bionic"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #E0F2F1; color: #555">P</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Morteza PRK
+/
+</span>
+<span class="project-name filter-title">
+platform_bionic
+</span>
+</span>
+</a></div>
+</li>
+
+<li class="no-description project-row">
+<div class="controls">
+<span>
+<i class="fa fa-star"></i>
+10
+</span>
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+<i class="fa fa-globe fa-fw"></i>
+</span>
+</div>
+<div class="title">
+<a class="project" href="/ebenard/linux-stable"><div class="dash-project-avatar">
+<div class="avatar project-avatar s40 identicon" style="background-color: #FBE9E7; color: #555">L</div>
+</div>
+<span class="project-full-name">
+<span class="namespace-name">
+Eric Bénard
+/
+</span>
+<span class="project-name filter-title">
+linux-stable
+</span>
+</span>
+</a></div>
+</li>
+
+</ul>
+<div class="gl-pagination">
+<ul class="pagination clearfix">
+<li class="prev disabled">
+<span>Prev</span>
+</li>
+
+<li class="page active">
+<a href="/explore/projects/trending">1</a>
+</li>
+
+<li class="page">
+<a rel="next" href="/explore/projects/trending?page=2">2</a>
+</li>
+
+<li class="page">
+<a href="/explore/projects/trending?page=3">3</a>
+</li>
+
+<li class="page">
+<a href="/explore/projects/trending?page=4">4</a>
+</li>
+
+<li class="page">
+<a href="/explore/projects/trending?page=5">5</a>
+</li>
+
+<li class="page">
+<span class="page gap">
+…
+</span>
+</li>
+
+<li class="next">
+<a rel="next" href="/explore/projects/trending?page=2">Next</a>
+</li>
+
+<li class="last">
+<a href="/explore/projects/trending?page=113">Last »</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>

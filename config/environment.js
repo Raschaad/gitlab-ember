@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'gitlab',
+    podModulePrefix: 'gitlab/pods',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
