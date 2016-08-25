@@ -42,7 +42,9 @@
     "ember-font-awesome": "2.2.0",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.1"
+    "ember-simple-auth": "1.1.0",
+    "loader.js": "^4.0.1",
+    "torii": "^0.8.0"
   },
   "ember-addon": {
     "paths": []

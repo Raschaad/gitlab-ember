@@ -1,0 +1,94 @@
+{{outlet}}
+<div class="container navless-container login-page ">
+
+
+  <div class="content">
+    <div class="flash-container flash-container-page">
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5 pull-right">
+        <div>
+          <div class="login-box">
+            <div class="login-heading">
+              <h3>Existing user? Sign in</h3>
+            </div>
+            <div class="login-body">
+              <form class="new_user" {{action 'authenticateOAuthPassword' on='submit'}}>
+                {{input value=identification class="form-control top" placeholder="Username or Email" autofocus="autofocus" autocapitalize="off" autocorrect="off" type="text"}} {{input value=password class="form-control bottom" placeholder="Password" type="password"}}
+                <div class="remember-me checkbox">
+                  <div class="pull-right">
+                    <a href="/users/password/new">Forgot your password?</a>
+                  </div>
+                </div>
+                <div>
+                  <input type="submit" name="commit" value="Sign in" class="btn btn-save">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="clearfix prepend-top-20">
+            <p>
+              <span class="light">
+              Sign in with &nbsp;
+              </span>
+              <span class="light">
+                <button {{action 'authenticateOAuth'}} class="oauth-image-link" data-no-turbolink="true" rel="nofollow" data-method="post" href="/users/auth/google_oauth2">
+                  <img alt="Google" title="Sign in with Google" src="/assets/images/auth_buttons/gitlab_64.png">
+                </button>
+              </span>
+            </p>
+
+          </div>
+
+          <div class="prepend-top-20">
+            <div class="login-box">
+              <div class="login-heading">
+                <h3>Use Token</h3>
+              </div>
+              <div class="login-body">
+                <form class="new_new_user" id="new_new_user" action="/users" accept-charset="UTF-8" method="post">
+
+                  <div class="form-group append-bottom-20">
+                    {{input value=token class="form-control" placeholder="Token" type="text"}}
+                  </div>
+
+                  <div>
+                    <input type="submit" name="commit" value="Sign in" class="btn-create btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-7 brand-holder pull-left">
+        <h1>
+GitLab.com
+</h1>
+
+        <p><strong>GitLab.com offers free unlimited (private) repositories and unlimited collaborators, please sign up or in on the right.</strong></p>
+
+        <ul>
+          <li>
+            <a href="https://gitlab.com/explore/projects/trending">Explore projects on GitLab.com</a> (no login needed)</li>
+          <li><a href="https://about.gitlab.com/gitlab-com/" rel="nofollow noreferrer" target="_blank">More information about GitLab.com</a></li>
+          <li><a href="https://gitlab.com/gitlab-com/support-forum/issues">GitLab.com Support Forum</a></li>
+        </ul>
+
+        <p>By signing up for and by signing in to this service you accept our:</p>
+
+        <ul>
+          <li><a href="https://about.gitlab.com/privacy/" rel="nofollow noreferrer" target="_blank">Privacy policy</a></li>
+          <li>
+            <a href="https://about.gitlab.com/terms/#gitlab_com" rel="nofollow noreferrer" target="_blank">GitLab.com Terms</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</div>

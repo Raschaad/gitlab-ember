@@ -3,7 +3,7 @@ import moduleForAcceptance from 'gitlab/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | index');
 
-test('visiting /index', function(assert) {
+test('visiting /index redirects to dashboard', function(assert) {
   visit('/');
 
   andThen(function() {
