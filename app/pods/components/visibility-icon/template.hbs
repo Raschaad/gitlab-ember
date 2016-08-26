@@ -1,0 +1,17 @@
+{{#if project.isPublic}}
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Public - The project can be cloned without any authentication.">
+  <i class="fa fa-globe fa-fw"></i>
+</span>
+{{/if}}
+
+{{#if project.isPrivate}}
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Private - Project access must be granted explicitly to each user.">
+  <i class="fa fa-lock fa-fw"></i>
+</span>
+{{/if}}
+
+{{#if project.isInternal}}
+<span class="visibility-icon has-tooltip" data-container="body" data-placement="left" title="Internal - The project can be cloned by any logged in user.">
+  <i class="fa fa-shield fa-fw"></i>
+</span>
+{{/if}}

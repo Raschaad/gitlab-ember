@@ -4,5 +4,19 @@ import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 export default DS.RESTAdapter.extend(DataAdapterMixin, {
   authorizer: 'authorizer:gitlab',
   host: 'https://gitlab.com',
-  namespace: 'api/v3'
+  namespace: 'api/v3',
+
+  handleResponse: function(status, headers, payload) {
+    console.log(status, headers);
+    let meta = {
+      nextPage: headers["X-Next-Page"],
+      page: headers["X-Page"],
+      perPage: headers["X-Per-Page"],
+      prevPage: headers["X-Prev-Page"],
+      total: headers["X-Total"],
+      totalPages: headers["X-Total-Pages"]
+    };
+    payload.meta = meta;
+    return this._super(status, headers, payload);
+   }
 });

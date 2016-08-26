@@ -1,1 +1,54 @@
-{{outlet}}
+<ul class="projects-list content-list">
+  {{#each content as |project|}}
+  <li class="{{unless project.description 'no-description'}} project-row">
+    <div class="controls">
+      <span>{{ci-status-link project=project}}</span>
+      <span><i class="fa fa-star"></i> {{project.star_count}} </span>
+      {{visibility-icon project=project}}
+    </div>
+    <div class="title">
+      <a class="project" href="/gitlab-org/gitlab-ce">
+        <div class="dash-project-avatar">
+          <img alt="" class="avatar project-avatar s40" src="https://gitlab.com/uploads/project/avatar/13083/gitlab-logo-square.png">
+        </div>
+        <span class="project-full-name">
+          <span class="namespace-name">{{project.namespace.name}} /</span>
+          <span class="project-name filter-title">{{project.name}}</span>
+        </span>
+      </a>
+    </div>
+    {{#if project.description}}
+    <div class="description">
+      <p>{{project.description}}</p>
+    </div>
+    {{/if}}
+  </li>
+  {{/each}}
+</ul>
+<div class="gl-pagination">
+  <ul class="pagination clearfix">
+    <li class="prev disabled"><span>Prev</span></li>
+    <li class="page active">
+      <a href="/explore/projects/trending">1</a>
+    </li>
+    <li class="page">
+      <a href="/explore/projects/trending?page=2" rel="next">2</a>
+    </li>
+    <li class="page">
+      <a href="/explore/projects/trending?page=3">3</a>
+    </li>
+    <li class="page">
+      <a href="/explore/projects/trending?page=4">4</a>
+    </li>
+    <li class="page">
+      <a href="/explore/projects/trending?page=5">5</a>
+    </li>
+    <li class="page"><span class="page gap">…</span></li>
+    <li class="next">
+      <a href="/explore/projects/trending?page=2" rel="next">Next</a>
+    </li>
+    <li class="last">
+      <a href="/explore/projects/trending?page=113">Last »</a>
+    </li>
+  </ul>
+</div>
